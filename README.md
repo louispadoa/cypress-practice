@@ -3,7 +3,7 @@
 ## Introduction
 This repository contains the starter files for the 'Cypress Practice' exercise.
 
-As part of this exercise we will use Cypress to write a series of functional tests. More specifically, we will be testing the features and functionality of the card matching game that we built as part of the 'Introduction to Debugging' class.
+As part of this exercise we will use Cypress to write a series of functional tests. More specifically, we will be testing the features and functionality of the card matching game that we built in the 'Introduction to Debugging' class.
 
 This exercise will build on the concepts and techniques that we've explored in this course, as well as some of the material that you have covered in the other WDDM courses.
 
