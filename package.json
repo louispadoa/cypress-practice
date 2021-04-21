@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server ./server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "Jesse R Mykolyn",
