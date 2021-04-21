@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
   var timer = document.querySelector('.timer');
   var timerInitialState = timer.innerText;
   var countDown = 0;
-  var countDownId;
+  var countDownId = null;
   var maxCountDown = 3;
 
   cards.forEach(function(card) {
@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
             });
             selectedCards = [];
             clearInterval(countDownId);
+            countDownId = null;
           }
           timer.innerText = countDown || timerInitialState;
         }, 1000);
@@ -81,7 +82,6 @@ window.addEventListener('DOMContentLoaded', function() {
   var deckColor = window.location.hash.substring(1);
 
   if (deckElement && deckColor) {
-    console.log('__ HERE');
     var className = 'cards--' + deckColor;
     deckElement.classList.add(className);
   }
