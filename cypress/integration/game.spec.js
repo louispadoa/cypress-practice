@@ -2,11 +2,6 @@ const expectedLength = 24
 
 const listWin = [[0, 2], [1, 4], [3, 5], [6, 8], [7, 10], [9, 11], [12, 16], [13, 14], [15, 17], [18, 19], [20, 23], [21, 22]]
 
-
-function randomIntFromInterval(min, max) { // min and max included
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
 describe('Basic init tests', () => {
   it('should display 24 cards', () => {
     cy.visit('http://localhost:8080')
